@@ -73,36 +73,7 @@ export class Home implements OnInit {
       description: 'Apartemen modern di pusat kota dengan akses ke berbagai fasilitas.',
       postedDays: 3
     },
-    {
-      id: 5,
-      title: 'Green Valley Residence',
-      location: 'Depok',
-      price: 550000000,
-      bedrooms: 3,
-      bathrooms: 2,
-      area: 100,
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop',
-      rating: 4.4,
-      status: 'Available',
-      type: 'rumah',
-      description: 'Perumahan cluster dengan konsep hijau dan lingkungan yang asri.',
-      postedDays: 7
-    },
-    {
-      id: 6,
-      title: 'Royal Tower Apartment',
-      location: 'Jakarta Barat',
-      price: 950000000,
-      bedrooms: 3,
-      bathrooms: 2,
-      area: 110,
-      image: 'https://images.unsplash.com/photo-1515263487990-61b07816b324?w=600&h=400&fit=crop',
-      rating: 4.7,
-      status: 'Available',
-      type: 'apartemen',
-      description: 'Apartemen premium dengan fasilitas lengkap dan lokasi strategis.',
-      postedDays: 4
-    }
+ 
   ];
 
   filteredList: Housing[] = [];

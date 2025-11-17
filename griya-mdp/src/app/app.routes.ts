@@ -4,6 +4,7 @@ import { Profile } from './profile/profile';
 import { Login } from './login/login';
 // import { Register } from '';
 import { Contact } from './contact/contact';
+import { LokasiPerumahan } from './lokasi-perumahan/lokasi-perumahan';
 
 export const routes: Routes = [
     // mengatur halaman utama aplikasi
@@ -28,5 +29,9 @@ export const routes: Routes = [
     {
         path: "contact",
         component: Contact,
+    },
+    {
+        path: "lokasi-perumahan",
+        component: LokasiPerumahan,
     },
 ];
