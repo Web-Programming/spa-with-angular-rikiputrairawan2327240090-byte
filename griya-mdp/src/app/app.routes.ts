@@ -1,28 +1,32 @@
 import { Routes } from '@angular/router';
-import { Home as HomeComponent} from './home/home';
+import { Home as HomeComponent } from './home/home';
+import { Profile } from './profile/profile';
+import { Login } from './login/login';
+// import { Register } from '';
+import { Contact } from './contact/contact';
 
 export const routes: Routes = [
-    //mengatur halaman utama aplikasi
+    // mengatur halaman utama aplikasi
     {
-        path : "",
-        component : HomeComponent,
-        title : "Home Page"
+        path: "",
+        component: HomeComponent,
+        title: "Home Page"
     },
     {
-        path : "profile",
-        component : Profile,
-        //title : "profile page"
+        path: "profile",
+        component: Profile,
+        // title: "Profile Page"
     },
     {
-        path : "login",
-        component : Login,
+        path: "login",
+        component: Login,
     },
+    // {
+    //     path: "register",
+    //     component: Register,
+    // },
     {
-        path : "register",
-        component : Register,
-    },
-    {
-        path : "contact"
-        component : Contact,
+        path: "contact",
+        component: Contact,
     },
 ];
