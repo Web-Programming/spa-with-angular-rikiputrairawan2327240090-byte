@@ -2,36 +2,42 @@ import { Routes } from '@angular/router';
 import { Home as HomeComponent } from './home/home';
 import { Profile } from './profile/profile';
 import { Login } from './login/login';
-// import { Register } from '';
+import { Register } from './register/register';
 import { Contact } from './contact/contact';
-import { LokasiPerumahan } from './lokasi-perumahan/lokasi-perumahan';
+import { Detail } from './detail/detail';
 
 export const routes: Routes = [
-    // mengatur halaman utama aplikasi
+    //mengatuh halaman utama aplikasi
     {
-        path: "",
-        component: HomeComponent,
-        title: "Home Page"
+        path : "",
+        component : HomeComponent,
+        title : 'Home Page'
     },
     {
-        path: "profile",
-        component: Profile,
-        // title: "Profile Page"
+        path : "profile",
+        component : Profile,
+        //title : 'Profile Page'
     },
     {
-        path: "login",
-        component: Login,
-    },
-    // {
-    //     path: "register",
-    //     component: Register,
-    // },
-    {
-        path: "contact",
-        component: Contact,
+        path : "login",
+        component : Login,
     },
     {
-        path: "lokasi-perumahan",
-        component: LokasiPerumahan,
+        path : "register",
+        component : Register,
     },
+    {
+        path : "contact",
+        component : Contact,
+    },
+     {
+        path: "property/:id",
+        component: Detail,
+        title: 'Detail Property - Griya MDP'
+    },
+    {
+        path: "**",
+        redirectTo: "",
+        pathMatch: 'full'
+    }
 ];
